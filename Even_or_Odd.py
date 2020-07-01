@@ -1,6 +1,6 @@
 #Pseudo code: this code determines if input number is even or odd
 #ask user for the number
-# If input is not an whole Number, send error message
+# If input is not an Integer, send error message 
 #assign variable- NUM as answer,
 #Find remainder when NUM/2
 #If NUM mod 2=0:
@@ -11,11 +11,9 @@
 print('Hello! Please enter a number here so I can determine if its Even or Odd:  ')
 try:
     NUM=int(input())
-    if NUM<0:
-        print('Please enter proper whole Number value!')
-    elif NUM%2==0:
+    if NUM%2==0:
         print('The number '+str(NUM)+' is Even')
     elif NUM%2!=0:
         print('The number '+(str(NUM))+' is Odd')
 except ValueError:
-    print('Please enter proper whole Number value!')
+    print('Please enter proper Integer value!')
